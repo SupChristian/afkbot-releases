@@ -1,0 +1,259 @@
+=====================================================================
+                          AFK BOT  v1.9
+                  How to install and use it
+=====================================================================
+
+---------------------------------------------------------------------
+READ THIS FIRST: BAN RISK
+---------------------------------------------------------------------
+AFK Bot plays Fortnite for you. Epic Games' rules don't allow bots,
+macros or AFK farming. Accounts caught using them can be banned, for
+a while or for good, and Epic doesn't give back items or V-Bucks.
+
+There's no way to make a bot like this safe. If you can't afford to
+lose your account, don't use it. The app asks you to confirm this
+every time it starts.
+
+
+---------------------------------------------------------------------
+WHAT YOU NEED
+---------------------------------------------------------------------
+- Windows 10 or 11
+- Fortnite on PC, set to English
+- An internet connection (your key is checked online)
+
+
+---------------------------------------------------------------------
+STEP 1 - UNZIP
+---------------------------------------------------------------------
+Right-click AFKBot.zip > Extract All > pick a folder (your Desktop is
+fine). Don't run the bot from inside the zip, and keep everything from
+the zip together in that folder.
+
+The first time you open AFKBot.exe, Windows may say "Windows protected
+your PC". Click "More info" > "Run anyway". Then click Yes when it asks
+for admin rights. The bot needs them so its clicks reach Fortnite.
+
+
+---------------------------------------------------------------------
+STEP 2 - TESSERACT (THE SCREEN READER)
+---------------------------------------------------------------------
+- If there's a "Tesseract-OCR" folder next to AFKBot.exe, you're done.
+- If not, install it from:
+      https://github.com/UB-Mannheim/tesseract/wiki
+  Keep the default install folder.
+
+
+---------------------------------------------------------------------
+STEP 3 - FORTNITE SETTINGS
+---------------------------------------------------------------------
+Fortnite must be in English. The bot sets the rest itself the first
+time it's in the lobby: Window Mode Windowed, your chosen FPS (Match
+tab > In-game FPS) and the FPS counter off. It reads each setting
+first and only changes what's different. Change your FPS later and it
+checks again the next time it's in the lobby.
+
+Optional: tick Match tab > "Also set the other graphics settings" and
+it also sets Color Blind Mode Tritanope (strength 5), UI Parallax On,
+Dynamic 3D Resolution Off, View Distance Far, Textures Low, Meshes
+Low, GPU Crash Debugging Off, NVIDIA Reflex On and Report Performance
+Stats Disabled. Settings your PC doesn't have are skipped.
+
+Want to do it by hand instead? Settings > Video: Window Mode Windowed,
+Resolution 1280 x 720, Show FPS Off. Then turn off Match tab > "Set
+them up in the lobby".
+
+
+---------------------------------------------------------------------
+STEP 4 - GET YOUR KEY
+---------------------------------------------------------------------
+1. Open AFKBot.exe, tick the three boxes, click "Accept and continue".
+2. Click "Get a key". The key website opens.
+3. Pick a route (Lootlabs or Linkvertise) and click "Start
+   checkpoint 1". Finish the page, and you come back to the key site
+   by yourself. Do any remaining checkpoints the same way.
+   Don't rush or skip, or the site makes you redo that checkpoint.
+4. Click "Copy key", paste it into the bot, click "Activate".
+
+- The first check can take up to a minute. That's normal, just wait.
+- Time left on your key shows bottom-right ("Key: 23h 12m left").
+  When it runs out, the bot stops and you get a new key the same way.
+- A key works on ONE PC: the first PC that uses it.
+- The bot remembers your key, so you don't paste it every time.
+
+
+---------------------------------------------------------------------
+STEP 5 - FIRST RUN
+---------------------------------------------------------------------
+1. Start Fortnite and go to the Battle Royale lobby.
+2. In the bot, open the Tools tab and click "Place Fortnite window".
+3. Click "Check screen reading". The log at the bottom should say
+   "screen = lobby". If it says "unknown", check step 3.
+4. Click Start (or press Ctrl+Alt+1).
+
+While it runs, leave Fortnite in front. Don't minimise it or click
+into other windows.
+
+Hotkeys (work even while Fortnite is in front):
+  Ctrl+Alt+1  start         Ctrl+Alt+P  pause / resume
+  Ctrl+Alt+2  stop          Ctrl+Alt+K  close the bot
+
+
+---------------------------------------------------------------------
+BATTLE BUS
+---------------------------------------------------------------------
+On the bus the bot opens the map (M), finds the bus (the ship icon at
+the back of the blue route arrows) and jumps as soon as the bus is
+over land. Then it looks straight down and
+holds W until it lands ("Dive for" in the Match tab, 30 s by default).
+Using a different map key in Fortnite? Change "Map key" in the Match
+tab. Turn the whole thing off with "Jump when the bus is over land".
+
+To test it: open the map in Fortnite on the bus, then click
+Tools > "Check bus map". The log says whether it found your arrow and
+whether it would jump, and debug\bus_map_check.png shows what it saw.
+
+
+---------------------------------------------------------------------
+THE TABS
+---------------------------------------------------------------------
+Everything saves by itself. The defaults work, so you only need these
+if you want to change something.
+
+Match ..... queue automatically, force Zero Build / Squad / Fill,
+            Fortnite settings (in-game FPS, hide the FPS counter, the
+            other graphics settings),
+            human-like movement, sprint (and your sprint key), extra
+            jumps, random timings, pickaxe key, camera speed,
+            battle bus (jump over land and dive, map key, dive time)
+Leaving ... what to do when you're eliminated, leave when few players
+            are left (e.g. 20), leave when your whole squad is out
+Options ... AFK chat messages, timing, update checks, your key,
+            colour theme (presets or your own colours)
+Discord ... get updates on your phone (see below)
+Tools ..... place the Fortnite window, check screen reading, insert
+            another key, open the debug folder, set up Fortnite's
+            settings now, Tesseract path
+
+
+---------------------------------------------------------------------
+DISCORD UPDATES (OPTIONAL)
+---------------------------------------------------------------------
+1. In your own Discord server: Server Settings > Integrations >
+   Webhooks > New Webhook > Copy Webhook URL.
+2. Paste it into "Webhook link" in the Discord tab, click "Send test".
+3. To get pinged: Discord Settings > Advanced > turn on Developer Mode,
+   right-click your name > Copy User ID, paste it into "Your Discord
+   user ID", click "Test ping".
+
+You get a message when a match ends, when the bot leaves a match, when
+something goes wrong, on a timer, "You found <item>, congrats!" when a
+reward pops up (with how many of that item you've found), and a session
+summary when the bot stops.
+
+Found Pirate Shop Access? You get a big ping with your total hours,
+matches and the odds, plus what else you could have done with all that
+time. It works for the banner in a match and for the popup in the
+lobby (only one ping per find). Turn it off or send a preview with
+"Big ping when Pirate Shop Access is found" in the Discord tab.
+
+Screenshots get black bars over player names (yours and your
+teammates') so you can share them. Turn it off with "Black out player
+names" in the Discord tab.
+
+Want rewards or problems in their own channel? Make a webhook in that
+channel and paste it under "Separate channels". Empty = main webhook.
+Keep your webhook links private.
+
+
+---------------------------------------------------------------------
+UPDATES
+---------------------------------------------------------------------
+The bot checks for a new version when it opens (and every 2 hours
+while it's open). If there is one, it asks you: "Update now" downloads
+it, restarts the bot and keeps your settings and key. "Later" asks
+again next time. While the bot is farming it waits until you stop it.
+You can also click "Update to v..." at the top at any time.
+
+Some updates are required. Then the old version can't start any more
+and "Update now" is the only way to keep using the bot.
+
+
+---------------------------------------------------------------------
+CHANGING YOUR KEY
+---------------------------------------------------------------------
+Tools > "Insert another key" (or click "Key: ..." bottom-right).
+Paste the new key and click Activate. The bot keeps running while you
+do this and switches over once the new key works. "Back" cancels.
+
+Options > Key > "Log out" forgets your key and stops the bot.
+A key stays locked to the first PC that used it, even after logging
+out. Changed PCs? Contact support.
+
+
+---------------------------------------------------------------------
+PROBLEMS
+---------------------------------------------------------------------
+"That isn't a valid key"
+    Copy the whole key again, including "AFK-".
+"This key has expired"
+    Get a new key with "Get a key".
+"This key is already used on another PC"
+    Keys work on one PC. Contact support.
+"Couldn't reach the key server"
+    Check your internet and try again in a minute.
+"Tesseract not found"
+    Do step 2. If you installed it somewhere else, put the path to
+    tesseract.exe in the Tools tab.
+The bot clicks but nothing happens in Fortnite
+    Close it, right-click AFKBot.exe > Run as administrator.
+The screen reads as "unknown" or the bot gets stuck
+    Fortnite must be Windowed, 1280 x 720 (or any 16:9 size) and in
+    English. Click "Place Fortnite window" again. Still stuck? Turn on
+    Options > "Save debug screenshots", let it get stuck once, then
+    send the pictures from Tools > "Open debug folder" to support.
+Players left shows "-"
+    Turn off the FPS / network overlay in Fortnite (the bot turns
+    the FPS counter off itself unless you untick that option).
+The bot couldn't set Fortnite's settings
+    Go to the lobby and click Tools > "Fortnite settings". If it
+    still fails, send debug\settings_not_found.png or
+    settings_unset.png to support.
+The bot doesn't jump off the bus
+    Open the map on the bus and click Tools > "Check bus map", then
+    send debug\bus_map_check.png to support.
+The camera spins too much or too little
+    Tools > tick "Show advanced tools" > "Test camera" should turn
+    about a quarter turn. Change Options > Camera speed until it does.
+
+
+---------------------------------------------------------------------
+PRIVACY
+---------------------------------------------------------------------
+- Key checks send the key server your key and a scrambled PC ID (it
+  can't be turned back into your name or files). The server also sees
+  your IP address, like any website.
+- Discord messages only go to the webhook YOU set up.
+- Your settings (config.json), stats (stats.json) and debug pictures
+  stay in the bot's folder on your PC.
+
+
+---------------------------------------------------------------------
+TERMS
+---------------------------------------------------------------------
+By using AFK Bot you agree that you accept the ban risk above, that
+you use it at your own risk, and that the developer isn't responsible
+for bans or lost items. AFK Bot isn't made by or connected to Epic
+Games. Don't share, resell, crack or modify the bot or its keys; keys
+can be disabled if they're shared or abused. It's provided "as is",
+with no guarantee it keeps working after Fortnite updates.
+
+
+---------------------------------------------------------------------
+SUPPORT
+---------------------------------------------------------------------
+Discord: [PUT YOUR DISCORD INVITE HERE]
+
+Include: what happened, the bot's log (bottom of the app), your PC ID
+for key problems (Options > Key > Copy PC ID), and debug screenshots
+for screen-reading problems.
